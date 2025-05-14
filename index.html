@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD</title>
+  <script defer src="./js/index.js" type="module"></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="bg-dark">
+  <header>
+    <h1>Crud Lista de tareas</h1>
+  </header>
+  <main>
+    <section>
+
+      <form id="form-task">
+        <fieldset>
+          <legend>Añador tarea</legend>
+          <label for="title">Título:</label>
+          <input name="title" type="text" id="title"  placeholder="Nombre de la tarea" />
+
+          <label for="description">Descripción:</label>
+          <textarea name="description" id="description" rows="3" placeholder="Descripción de la tarea"></textarea>
+
+          <button class="btn btn-primary" id="btn-task-form">Añadir tarea</button>
+          <button class="btn btn-tertiary" id="btn-task-cancel" hidden type="button">Cancel</button>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <ul class="tasklist" id="task-list"></ul>
+    </section>
+  </main>
+</body>
+
+</html>
